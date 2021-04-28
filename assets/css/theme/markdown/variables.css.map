@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../../../../../theme/markdown/variables.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
