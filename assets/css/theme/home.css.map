@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "home.css",
-	"sources": [
-		"../../../../theme/home.sass"
-	],
-	"names": [],
-	"mappings": "AAAA,AAAA,EAAE,AAAC,CACC,UAAU,CAAE,IAAI,CAIa,AALjC,AAEI,EAFF,CAEE,EAAE,AAAC,CACC,aAAa,CAAE,IAAI,CAEI,AAL/B,AAIQ,EAJN,CAEE,EAAE,CAEE,GAAG,AAAC,CACA,OAAO,CAAE,KAAK,CAAG,AAC7B,AAAA,GAAG,AAAC,CACA,UAAU,CAAE,IAAI,CAAG"
-}
