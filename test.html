@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>鼠标移动到文字上出现提示特效</title>
+</head>
+<body>
+<script>
+function $(id){
+	return document.getElementById(id);
+}
+document.write("<div id=\"ts\" style=\"position:absolute;background-color:#FFFFE6;font-size: 12px;padding: 3px;	border: 1px solid #FFCC99;display:none\"></div>");
+function mmove(o,s){
+	var evt=event||window.event;
+    var x=evt.clientX+15;
+    var y=evt.clientY+5;
+    $('ts').style.left=x+'px';
+    $('ts').style.top=y+'px';
+    if(s==''||typeof(s)=='undefined'){
+        $('ts').innerHTML=o.innerHTML;
+    }else{
+        $('ts').innerHTML=s;
+    }
+    $('ts').style.display='';
+}
+function mout(){
+	$('ts').style.display='none';
+}
+</script>
+<p>
+<a href="#" onMouseMove="mmove(this)" onMouseOut="mout();">aaaaaaaaa<br><font color=red>aaaaaaa></font></a>
+</p>
+<p>
+<a href="#" onMouseMove="mmove(this,'哈哈s')" onMouseOut="mout();">bbbbbbbbbbb</a>
+</p>
+<p>
+<a href="#" onMouseMove="mmove(this)" onMouseOut="mout();">cccccccccccc</a>
+</p>
+<p>
+<img src="http://bbs.blueidea.com/images/default/logo.gif"  onmousemove="mmove(this,' 蓝色理想<br><font color=red>实现梦想</font>')" onMouseOut="mout();">
+</p>
+<p>
+<a href="#" onMouseMove="mmove(this)" onMouseOut="mout();">eeeeeeeeeeeee</a>
+</p>
+<p>
+<a href="#" onMouseMove="mmove(this)" onMouseOut="mout();">想做个特效就是移到文字上面或是图片上面出现提示，title能够定义属性吗？如换行，文字色彩等<br />
+<br />
+在坛内看到一个移<span><font color=blue>到小图片上出现大图片的效果，效果不错</font></span>，感觉挺复杂，不知道有没有更简单一点的。
+</a>
+</p>
+<p>
+<a href="#" onMouseMove="mmove(this)" onMouseOut="mout();">ggggggggggggggggggggggggggg</a>
+</p>
+<p>
+<a href="#" onMouseMove="mmove(this)" onMouseOut="mout();">hhhhhhhhhhhhhhhhhhhhhhhhh</a>
+</p>
+<p>
+<a href="#" onMouseMove="mmove(this)" onMouseOut="mout();">想做个特效就是移到文字上面或是图片上面出现提示，title能够定义属性吗？如换行，文字色彩等<br />
+<br />
+在坛内看到一个移<span><font color="#CC0000">到小图片上出现大图片的效果，效果不错</font></span>，感觉挺复杂，不知道有没有更简单一点的。
+</a>
+</p>
+</body>
+</html>
